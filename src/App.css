@@ -2,7 +2,53 @@
   text-align: center;
 }
 
-.App-logo {
+.left {
+  float: left;
+  width: 30%;
+  margin-top: 10px;
+  background-color: silver;
+  height: 100vh;
+  margin-bottom: 10px;
+  overflow-y: scroll;
+}
+
+.title {
+  text-align: left;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.left h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+.left::after {
+  content: "";
+  background-color: silver;
+  position: absolute;
+  width: 2px;
+  height: 100vh;
+  top: 0px;
+  left: 30%;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.right {
+  float: right;
+  width: 70%;
+  margin-top: 10px;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +81,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
