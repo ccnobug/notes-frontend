@@ -9,8 +9,10 @@ function Row(props) {
 
 
     return (
+        
         <div className='title' onClick={onClickFn} style={{backgroundColor: bgColor}}>
-             {title} 
+             <div>{title} </div>
+             <div className='date'>Date:2021/02/.. </div>
         </div>
     );    
 }
@@ -25,6 +27,8 @@ function LeftColumn() {
     const [activeSate, setActiveSate] = useState(null);
 
     const clickActive=(e)=> {
+        console.log("click")
+        console.log(e.target.innerText)
         setActiveSate(e.target.innerText);
     }
     
@@ -34,7 +38,7 @@ function LeftColumn() {
         {
             titles.map((title, index) => {
                 return <Row
-                    bgColor={title === activeSate? "lightslategray":"transparent"}
+                    bgColor={title === activeSate? "rgb(216, 229, 238)" :"transparent"}
                     onClickFn={clickActive}
                     key={index} 
                     title={title}
