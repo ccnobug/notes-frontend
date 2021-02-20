@@ -37,26 +37,46 @@
   color: rgb(176, 188, 197);
 }
 
-.title {
-  text-align: left;
+.note {
   /* padding-left: 15px; */
   padding-bottom: 10px;
   padding-top: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  border-bottom: 1px solid #d2d7da;
+
   /* overflow-x: auto;
   overflow-y: auto; */
   font-family: cursive;
   /* border-bottom: 1px solid #d2d7da; */
-  border-bottom: 1px solid #d2d7da;
   margin-left: 30px;
   text-indent: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.title {
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.created_date {
+  /* padding-top: 10px;
+    padding-bottom: 10px; */
+  float: left;
+  text-align: left;
+  position: absolute;
+  width: 60%;
 }
 
-.date {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.preview {
+  text-align: left;
+  float: right;
+  position: relative;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 10px;
+  right: 10px;
+  overflow: hidden;
+  width: 30%;
 }
 
 .left::after {
